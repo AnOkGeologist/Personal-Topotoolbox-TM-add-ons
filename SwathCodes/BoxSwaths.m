@@ -1,6 +1,6 @@
 % clear all; close all; clc
-%%%%%%%%%%%%%%%%%%%%% This code makes uniform swaths along a line created from two points that the user selects on a map
-
+%%%%%%%%%%%%%%%%%%%%% This code makes uniform swaths along a line created from two points that the user selects on a map %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% first load your DEM, double click or edit code to include command or prompt.
 numberofswaths = 4; %set the number of swaths you want to make
 
 %% Initiate some stuff
