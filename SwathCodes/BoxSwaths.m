@@ -1,10 +1,7 @@
 % clear all; close all; clc
+%%%%%%%%%%%%%%%%%%%%% This code makes uniform swaths along a line created from two points that the user selects on a map
 
-% %% Modify this
-% DEMfilename = 'HispaniolaBaseVars.mat'; % DEM as listed in directory/file explorer/ finder
-% load(DEMfilename) % dont modify
-% DEMname = DEM;
-% numberofswaths = 4;
+numberofswaths = 4; %set the number of swaths you want to make
 
 %% Initiate some stuff
 COLORMAPtopo =colormap_cpt('Topo'); % colormap, 'Topo' is a cpt file in my directory
@@ -17,14 +14,12 @@ hold on;
 [coordsX, coordsY] = ginput(2);
 upleft_y = 2.196e6;
 %%
-
-DEM = DEMname;
-
+% You can manually enter coordinates here... if you want...
 % coordsX(1) = 283272;
 % coordsY(1) = 2174845;
 % coordsX(2) = 344564
 % coordsY(2) = 2147163;
-uplefty = 2.196e6;
+uplefty = 2.196e6; 
 x = coordsX(1):1000:coordsX(2);
 x1 = x - coordsY(1);
 slp = (coordsY(2)-coordsY(1))/(coordsX(2)-coordsX(1));
